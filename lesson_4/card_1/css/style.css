@@ -1,0 +1,76 @@
+/* Сброс дефолтных стилей */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Inter', sans-serif;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.card {
+	max-width: 350px;
+	width: 100%;
+	background: #fff;
+	border-radius: 16px;
+	padding: 32px;
+	box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+}
+
+.card__icon {
+	max-width: 48px;
+	width: 100%;
+}
+
+.card__content {
+	margin-top: 24px;
+}
+
+.card__title {
+	font-size: 16px;
+	font-weight: 600;
+	color: #27272E;
+}
+
+.card__text {
+	font-size: 14px;
+	font-weight: 400;
+	color: #425466;
+	margin-top: 8px;
+}
+
+.card__btn {
+	background: #4C6FFF;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	padding: 12px 20px;
+	margin-top: 24px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.card__btn:hover {
+	background: #1642f1;
+}
+
+.card__btn:active {
+	background: #0729ad;
+}
