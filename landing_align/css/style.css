@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.offer {
+	width: 100%;
+	height: 40px;
+	background-color: #ADC9A6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offer__img {
+	width: 24px;
+	height: 24px;
+	margin-right: 4px;
+}
+
+.offer__text {
+	font-family: "Roboto", sans-serif;
+	font-size: 11px;
+	color: #153C3C;
+}
+
+
+/* .box {
+	width: 200px;
+	height: 200px;
+	background: #cecece;
+	border: 1px solid red;
+	padding: 20px;
+} */
