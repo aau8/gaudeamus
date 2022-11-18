@@ -10,6 +10,15 @@
 	* center
 	* space-between
 	* space-around
+* flex-direction
+	* row (по умол.)
+	* row-reverse
+	* column
+	* column-reverse
+* [flex-wrap](https://webref.ru/css/flex-wrap)
+	* nowrap (по умол.)
+	* wrap
+	* wrap-reverse
 
 ## Следующие задания необходимо выполнить с одной карточкой. Оставьте зеленую, а остальные закомментируйте
 1. Выровняйте зеленую карточку по центру страницы. Как должно получиться: ![](./files/img/1.jpg)
