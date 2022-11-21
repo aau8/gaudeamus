@@ -10,6 +10,12 @@ html, body {
 	height: 100%;
 }
 
+button {
+	background-color: purple;
+	color: white;
+	font-size: 14px;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #172426;
@@ -34,8 +40,10 @@ body {
 /* Раздел с предложением */
 
 .offer {
+	position: fixed;
+	top: 0;
+	z-index: 10;
 	width: 100%;
-	/* height: 40px; */
 	background: #ADC9A6;
 	display: flex;
 	align-items: center;
@@ -59,6 +67,7 @@ body {
 	width: 100%;
 	background: #153C3C;
 	padding: 29px 0;
+	margin-top: 40px;
 }
 
 .header__body {
@@ -78,8 +87,6 @@ body {
 }
 
 .header__btn {
-	/* width: 106px;
-	height: 40px; */
 	padding: 8px 24px;
 	font-size: 13px;
 	color: #fff;
@@ -88,4 +95,81 @@ body {
 	border-radius: 4px;
 	margin-left: auto;
 	cursor: pointer;
+}
+
+/* Главный экран */
+.main__content {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.s-header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.s-header__label {
+	font-size: 18px;
+	color: #153C3C;
+	text-align: center;
+	padding: 8px 16px;
+	background: #F3F7F2;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.s-header__title {
+	max-width: 612px;
+	font-size: 62px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 10px;
+	line-height: 1.3;
+}
+
+/* .has-line {
+	position: relative;
+}
+
+.has-line img {
+	position: absolute;
+	z-index: -1;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+} */
+
+.has-line {
+	position: relative;
+}
+
+.has-line::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	z-index: -1;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url(../img/line.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .has-line::after {
+	content: '"';
+} */
+
+.main__img {
+	border-radius: 6px;
+	width: 100%;
+}
+
+.main__img img {
+	width: 100%;
 }
