@@ -37,6 +37,10 @@ body {
 	margin: 0 auto;
 }
 
+.section-margin {
+	margin: 120px 0;
+}
+
 /* Раздел с предложением */
 
 .offer {
@@ -95,6 +99,11 @@ body {
 	border-radius: 4px;
 	margin-left: auto;
 	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.header__btn:hover {
+	background: #266216;
 }
 
 /* Главный экран */
@@ -172,4 +181,36 @@ body {
 
 .main__img img {
 	width: 100%;
+}
+
+/* Раздел other */
+.other__content {
+	margin-top: 100px;
+}
+
+.other__list {
+	/* display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px; */
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: -20px;
+}
+
+.card-other {
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #F2F8F8;
+	border-radius: 12px;
+	padding: 40px;
+	text-decoration: none;
+	margin: 20px;
+}
+
+.card-other__title {
+	font-size: 21px;
+	color: #172426;
 }
