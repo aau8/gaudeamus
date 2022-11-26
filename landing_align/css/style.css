@@ -208,6 +208,12 @@ body {
 	padding: 40px;
 	text-decoration: none;
 	margin: 20px;
+	transition-duration: .3s;
+}
+
+.card-other:hover {
+	box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+	transform: scale(105%) translateY(-10px);
 }
 
 .card-other__title {
