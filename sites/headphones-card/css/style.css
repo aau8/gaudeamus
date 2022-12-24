@@ -2,7 +2,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -36,21 +36,48 @@ body {
 }
 
 .card__price {
+	display: flex;
+	align-items: center;
 	font-size: 48px;
-	font-weight: 500;
+	font-weight: 600;
+
 }
 
 .card__price-dollar {
 	font-size: 32px;
 	font-weight: 400;
+	margin-right: 8px;
 }
 
 .card__price-cent {
 	font-size: 28px;
 	font-weight: 400;
+	align-self: flex-start;
+	margin-left: 8px;
 }
 
 .card__name {
 	margin-top: 8px;
+	color: #414141;
 	font-size: 34px;
+}
+
+.card__text {
+	font-size: 18px;
+	font-weight: 500;
+	color: #414141;
+	margin-top: 8px;
+}
+
+.card__button {
+	width: 100%;
+	padding: 25px 16px;
+	background-color: #3483FA;
+	border-radius: 4px;
+	font-size: 34px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 16px;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+
 }
