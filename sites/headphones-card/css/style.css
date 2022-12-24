@@ -1,0 +1,56 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+}
+
+.card {
+	max-width: 435px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.card__product {
+	background-color: #65955D;
+}
+
+.card__img {
+	width: 100%;
+	height: 100%;
+}
+
+.card__img img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.card__content {
+	display: flex;
+	flex-direction: column;
+	padding: 32px 18px;
+}
+
+.card__price {
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.card__price-dollar {
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.card__price-cent {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.card__name {
+	margin-top: 8px;
+	font-size: 34px;
+}
