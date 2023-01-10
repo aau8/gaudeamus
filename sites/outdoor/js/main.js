@@ -5,3 +5,5 @@ burger.addEventListener('click', () => {
 	burger.classList.toggle('is-close')
 	menu.classList.toggle('is-show')
 })
+
+console.log('Hello, world!')
