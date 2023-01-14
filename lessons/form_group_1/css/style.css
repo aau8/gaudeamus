@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+input {
+    border: none;
+    font-size: 100%;
+    outline: none;
+    background: transparent;
+}
+
+.field__input {
+    height: 32px;
+    border: 1px solid #cecece;
+    border-radius: 6px;
+    padding: 0 12px;
+}
+
+.field__input:required {
+    border-color: red;
+}
+
+.field__input::placeholder {
+    color: red;
+}
+
+.form__submit {
+    background: cyan;
+    border: 0;
+    padding: 8px;
+}
+
+.field-custom {
+    height: 44px;
+    position: relative;
+}
+
+.field-custom__input {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+.field-custom__input::placeholder {
+    opacity: 0;
+}
+
+.field-custom.has-hide-label .field-custom__input:focus ~ .field-custom__label {
+    opacity: 0;
+    transform: translateX(50px) translateY(-50%);
+}
+
+.field-custom.has-hide-label .field-custom__input:not(:placeholder-shown) ~ .field-custom__label {
+    opacity: 0;
+    transform: translateX(50px) translateY(-50%);
+}
+
+.field-custom.has-translate-label .field-custom__input:focus ~ .field-custom__label {
+    top: 0;
+    left: 8px;
+    background: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+.field-custom.has-translate-label
+    .field-custom__input:not(:placeholder-shown)
+    ~ .field-custom__label {
+    top: 0;
+    left: 8px;
+    background: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+.field-custom__label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    pointer-events: none;
+}

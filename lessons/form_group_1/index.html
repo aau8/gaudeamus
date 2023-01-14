@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<form action="#" method="GET">
+		<label for="user_age">Name</label>
+		<input type="text" id="user_name" name="user_name" placeholder="Name" value="Artem"
+			   title="type=text"
+			   required>
+		<input type="tel" name="user_phone" placeholder="Phone" title="type=tel">
+		<input type="number" id="user_age" name="user_age" placeholder="Age" title="type=number">
+		<input type="email" name="user_email" placeholder="Email*" title="type=email" required>
+		<input type="radio" name="user_hair" value="black">Черный
+		<input type="radio" name="user_hair" value="blonde">Блондин
+		<input type="radio" name="user_hair" value="red">Красный
+		<input type="checkbox" name="user_hair" value="black">Черный
+		<input type="checkbox" name="user_hair" value="blonde">Блондин
+		<input type="checkbox" name="user_hair" value="red">Красный
+		<input type="file" name="user_file" multiple max="100">
+		<input type="range">
+		<textarea name="" id="" placeholder="Ваш вопрос">
+			fdsdsf dsfds fs
+		</textarea>
+
+		<input type="submit" value="Send with input">
+		<button>Send</button>
+		<button type="button">Button</button>
+	</form>
+</body>
+
+</html>
+
+
+<!-- POST - http://localhost:5555/index.html
+GET - http://localhost:5555/index.html?user_name=fdsfs&user_phone=3333333333
+GET - http://localhost:5555/index.html?color=blue&category=cooking&price=10000 -->
