@@ -1,0 +1,18 @@
+.is-minus {
+    color: blue;
+}
+
+.is-plus {
+    color: red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    opacity: 0;
+}
+
+.box.is-show {
+    opacity: 1;
+}
